@@ -4,5 +4,5 @@ import app_reducer from './app-reducer';
 
 export default combineReducers({
     auth : auth_reducer,
-    // app: app_reducer
+    app: app_reducer
 })
