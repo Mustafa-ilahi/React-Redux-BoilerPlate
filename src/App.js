@@ -6,7 +6,7 @@ import { set_data } from './store/action';
 
 class App extends Component{
   render(){
-    console.log("redux-data=> ", this.props.username);
+    console.log("redux-data=> ", this.props);
     return(
       <div>
         <button onClick={() => this.props.set_data("Yaha se bh data jaskta hai")}>Set Data</button>
@@ -17,9 +17,9 @@ class App extends Component{
 
 const mapStateToProps = (state) => (
     {
-      username: state.auth.username,
+      username: state.auth.userName,
       email : state.auth.email,
-      // app_name : state.app.app_name
+      // app : state.app.app_name
   }
 )
 

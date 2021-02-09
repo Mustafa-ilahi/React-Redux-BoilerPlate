@@ -2,19 +2,14 @@ const INITIAL_STATE = {
     app_name: "BoilerPlate"
 }
 
-export default (state = INITIAL_STATE, action)=>
-{
-    return state;
-    // console.log(action);
-    // switch (action.type) {
-    //     case "SETDATA":
-    //         return({
-    //             ...state,
-    //             data: action.data
-    //         })
-    //         break;
-    
-    //     default:
-    //         break;
-    // }
+export default (state = INITIAL_STATE, action)=>{
+    console.log("app_action",action);
+    switch (action.type) {
+        case "SETDATA":
+            return({
+                ...state,
+                app_name: action.data
+            })
+        }
+        return state;
 }
